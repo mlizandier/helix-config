@@ -5,8 +5,6 @@ true-color = true
 line-number = "relative"
 
 [keys.normal]
-o = ["open_below", "normal_mode"]
-O = ["open_above", "normal_mode"]
 "%" = "match_brackets"
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]

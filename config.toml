@@ -1,0 +1,20 @@
+theme = 'varua'
+
+[editor]
+true-color = true
+line-number = "relative"
+
+[keys.normal]
+o = ["open_below", "normal_mode"]
+O = ["open_above", "normal_mode"]
+"%" = "match_brackets"
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+
+[keys.normal.d]
+d = ["extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection"]
+down = ["select_mode", "extend_to_line_bounds", "extend_line_below", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"]
+up = ["select_mode", "extend_to_line_bounds", "extend_line_above", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"]
+
+[keys.select]
+"%" = "match_brackets"
